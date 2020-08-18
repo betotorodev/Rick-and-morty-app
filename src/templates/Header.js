@@ -4,7 +4,7 @@ const Header = () => {
     <div class="logo">
     <h1>
       <a href="/">
-        RickAndMortyApp
+        Rick And Morty App
       </a>
     </h1>
     </div>
@@ -16,4 +16,4 @@ const Header = () => {
   return view
 }
 
-export const Header
+export default Header
