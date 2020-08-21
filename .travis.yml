@@ -3,8 +3,8 @@ cache:
   directories:
     - ~/.npm
 node_js:
-  - '12'
-git: 
+  - "12"
+git:
   depth: 3
 script:
   - yarn build
@@ -17,5 +17,5 @@ deploy:
   local-dir: dist/
   target-branch: gh-pages
   commit_message: "Deploy Release"
-  on: 
+  on:
     branch: master
