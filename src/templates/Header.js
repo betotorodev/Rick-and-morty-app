@@ -1,9 +1,12 @@
+const basename =
+  process.env.NODE_ENV === "development" ? "/" : "/Rick-and-morty-app/"
+
 const Header = () => {
   const view = `
   <div class="header-main">
     <div class="logo">
     <h1>
-      <a href="/">
+      <a href=${basename}>
         <img class="header-logo" src="../src/static/rickAndMorty.png" alt="Rick and Morty logo"/>
       </a>
     </h1>
