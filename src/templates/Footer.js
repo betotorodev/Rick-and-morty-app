@@ -1,20 +1,21 @@
 import getData from "../utils/getData"
+import getHash from "../utils/getHash"
 
 const Footer = async () => {
   const data = await getData()
+  const hash = await getHash()
 
-  let ancles = []
+  let links = []
   for (let i = 1; i <= data.info.pages; i++) {
-    ancles.push(i)
+    links.push(i)
   }
 
-  let a = 0
   const view = `
-    <footer>
+    <footer class=${hash === '/' ? '' : 'hidden'}>
         <ul class="footer-pages">
-            ${ancles.map(() => `
+            ${links.map((id) => `
             <li>
-              <a href="#/?page=${++a}/">${a}</a>
+              <a href="#/?page=${id}/">${id}</a>
             </li>
             `).join("")}
         </ul>
