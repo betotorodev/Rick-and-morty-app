@@ -4,7 +4,7 @@ const Header = () => {
     <div class="logo">
     <h1>
       <a href="/">
-        Rick And Morty App
+        <img class="header-logo" src="../src/static/rickAndMorty.png" alt="Rick and Morty logo"/>
       </a>
     </h1>
     </div>
