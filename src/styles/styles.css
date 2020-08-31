@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 
@@ -52,6 +53,12 @@ body {
   grid-gap: 1.5rem;
   grid-row-gap: 1.5em;
   display: grid;
+}
+
+@media (max-width: 810px) {
+  .characters-inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .character-card {
