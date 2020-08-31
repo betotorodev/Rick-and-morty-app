@@ -119,6 +119,15 @@ body {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
+.footer-pages {
+  display: flex;
+  list-style: none;
+}
+
+.footer-pages li {
+  margin-right: 10px;
+}
+
 @keyframes fade {
   from {
     opacity: 0;
