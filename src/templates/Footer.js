@@ -4,6 +4,7 @@ import getHash from "../utils/getHash"
 const Footer = async () => {
   const data = await getData()
   const hash = await getHash()
+  const page = hash.includes('page')
 
   let links = []
   for (let i = 1; i <= data.info.pages; i++) {
@@ -11,7 +12,7 @@ const Footer = async () => {
   }
 
   const view = `
-    <footer class=${hash === '/' ? '' : 'hidden'}>
+    <footer class=${hash === '/' || page ? '' : 'hidden'}>
         <ul class="footer-pages">
             ${links.map((id) => `
             <li>
